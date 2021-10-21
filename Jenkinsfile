@@ -4,7 +4,8 @@ pipeline {
     stage('echo branch') {
       steps {
         sh 'printenv'
-        echo '\'Pulling...\' + env.BRANCH_NAME'
+        echo '"The build number is ${env.BUILD_NUMBER}"'
+        sh 'echo "I can access $BUILD_NUMBER in shell command as well."'
       }
     }
 
