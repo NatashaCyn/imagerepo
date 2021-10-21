@@ -4,7 +4,7 @@ pipeline {
     stage('echo branch') {
       steps {
         sh 'printenv'
-        echo '${env.BRANCH_NAME}'
+        echo '\'Pulling...\' + env.BRANCH_NAME'
       }
     }
 
