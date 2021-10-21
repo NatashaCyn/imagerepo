@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('echo branch') {
       steps {
-        sh '''echo \'Pulling... ${env.GIT_BRANCH}\'
+        sh '''Pulling... ${env.GIT_BRANCH}
 '''
         sh 'printenv'
       }
